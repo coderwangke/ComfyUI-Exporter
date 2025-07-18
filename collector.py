@@ -41,8 +41,4 @@ async def get_metrics(request):
 
 collector = PrometheusCollector()
 
-NODE_CLASS_MAPPINGS = {
-    "PrometheusCollector": collector
-}
-
 REGISTRY.register(collector)
